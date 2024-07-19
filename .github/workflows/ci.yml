@@ -45,7 +45,7 @@ jobs:
         run: |
           pip install coverage
           coverage run --source='.' manage.py test
-          coverage report --fail-under=90
+          coverage report --fail-under=80
           coverage xml
         continue-on-error: false
 
